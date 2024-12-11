@@ -2,11 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>workspace</title>
+    <title>Projects Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e90ff;
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 15px;
+        }
+
+        .project-info h3 {
+            margin: 0 0 10px;
+            color: #1e90ff;
+        }
+
+        .project-info p {
+            margin: 0;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .project-card img {
+                height: 150px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Projects Showcase</h1>
+    </header>
+
+    <div class="container">
+        <div class="project-card">
+            <img src="p1.png" alt="Project 1">
+            <a href="github.com/om-yaduvenshi/om-yaduvenshi.github.io/blob/main/assets/Speedforce%20User_v4.0.apk" download>Download Speed Force App</a>
+            <div class="project-info">
+               <h3>Speed Force App</h3>
+        <p>Your trusted online platform for reliable and efficient automobile repair services. From routine maintenance to emergency repairs, Speed Force App connects you with skilled mechanics, offering doorstep service, transparent pricing, and quick solutions to keep your vehicle running smoothly. Experience convenience and quality with just a few taps!</p>
+
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <img src="p1.png" alt="Project 2">
+            
+            <div class="project-info">
+                <h3>Purabiya News</h3>
+                <p>Ut hendrerit, odio at viverra pretium, ligula arcu efficitur nulla, sit amet gravida arcu metus eu leo.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="project-info">
+                <h3>Project 3</h3>
+                <p>Phasellus eget risus eget libero bibendum facilisis sit amet id ligula.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="project4.jpg" alt="Project 4">
+            <div class="project-info">
+                <h3>Project 4</h3>
+                <p>Quisque vitae malesuada felis. Cras lacinia auctor sem, at pulvinar nulla aliquet non.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
