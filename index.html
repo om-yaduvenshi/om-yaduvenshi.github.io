@@ -2,6 +2,70 @@
 <html lang="en">
 
 <head>
+
+ <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner {
+            background-color: #e0f7fa;
+            color: #01579b;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #01579b;
+            border-radius: 10px;
+        }
+
+        .banner-logo {
+            flex-basis: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .banner-logo img {
+            height: 80px;
+        }
+
+        .founder {
+            text-align: center;
+            margin: 10px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .founder img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #01579b;
+            margin-bottom: 10px;
+        }
+
+        .founder h3 {
+            margin: 10px 0 5px;
+        }
+
+        .founder p {
+            margin: 0;
+        }
+
+        .banner-date {
+            flex-basis: 100%;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+
+
+
+  
 <meta property="og:url" content="https://om-yaduvenshi.github.io/"/>
 <meta property="og:image" content="https://om-yaduvenshi.github.io/assets/img/profile-img.jpg"/>  
 <meta property="og:title" content="Om's Portfolio"/>  
@@ -83,6 +147,38 @@
       </div>
     </div>
   </section><!-- End Hero -->
+
+  <div class="banner">
+        <div class="banner-logo">
+            <img src="logo.png" alt="Healthy India Logo">
+        </div>
+        <div class="founder">
+            <img src="honey.jpg" alt="Honey's Image">
+            <h3>Honey</h3>
+            <p>Founder</p>
+        </div>
+        <div class="founder">
+            <img src="om.jpg" alt="Om's Image">
+            <h3>Om</h3>
+            <p>Co-Founder</p>
+        </div>
+        <div class="founder">
+            <img src="saurabh.jpg" alt="Saurabh's Image">
+            <h3>Saurabh</h3>
+            <p>Co-Founder</p>
+        </div>
+        <div class="banner-date">
+            Launching on 28 March 2024
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.founder img').forEach(img => {
+            img.addEventListener('click', () => {
+                alert(`${img.alt.split("'s")[0]} is a part of Healthy India!`);
+            });
+        });
+    </script>
 
   <main id="main">
 
